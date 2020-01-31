@@ -7,6 +7,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
+
     <meta charset="utf-8" />
     <title></title>
   </head>
@@ -18,9 +20,9 @@
     <p id="description">This is a survey about some spesicifations.</p>
     <form id="survey-form">
       <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" class="form-control" placeholder="name" />
+      <input type="text" id="name" class="form-control" placeholder="name" required/>
       <label for="email" id="email-label">Email:</label>
-      <input type="email" id="email" class="form-control" placeholder="Email" />
+      <input type="email" id="email" class="form-control" placeholder="Email" required/>
       <label for="number" id="number-label">number:</label>
       <input
         type="number"
@@ -30,7 +32,10 @@
         min="1"
         max="15"
       />
-      <select name="dropdown" id="dropdown" class="form-control"> </select>
+      <select name="dropdown" id="dropdown" class="form-control" required>
+        <option value="100">hundred</option>
+        <option value="200">twohundred</option>
+      </select>
 
       <input type="radio" name="radioselect" value="1" />
       <input type="radio" name="radioselect" value="2" />
@@ -69,4 +74,5 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
