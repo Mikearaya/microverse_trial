@@ -18,7 +18,7 @@
     <h1 id="title">Survey Form</h1>
 
     <p id="description">This is a survey about some spesicifations.</p>
-    <form id="survey-form">
+    <form id="survey-form" class="card">
       <label for="name" id="name-label">Name:</label>
       <input type="text" id="name" class="form-control" placeholder="name" required/>
       <label for="email" id="email-label">Email:</label>
@@ -37,9 +37,18 @@
         <option value="200">twohundred</option>
       </select>
 
-      <input type="radio" name="radioselect" value="1" />
-      <input type="radio" name="radioselect" value="2" />
-      <input type="radio" name="radioselect" value="3" />
+      <div class="form-check-label">
+        <input type="radio" name="radioselect" id="radioOne" value="1" />
+        <label for="radioOne" class="form-check-label">One</label>
+      </div>
+      <label class="form-check-label">
+        <input type="radio" name="radioselect" id="radioTwo" value="2" />
+        <label for="radioTwo" class="form-check-label">Two</label>
+      </label>
+      <div class="form-check-label">
+        <input type="radio" name="radioselect" id="radioThree" value="3" />
+        <label for="radioThree" class="form-check-label">Three</label>
+      </div>
 
       <input type="checkbox" name="checkselect" value="One" />
       <input type="checkbox" name="checkselect" value="Two" />
